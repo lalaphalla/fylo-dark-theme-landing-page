@@ -1,0 +1,25 @@
+.feature{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+    &__container{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        
+    }
+    &__text{
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    @include breakpoint-up(large){
+        flex-direction: row;
+        &__container{
+            width: 40%;
+        }
+    }
+}
